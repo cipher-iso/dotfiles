@@ -1,0 +1,89 @@
+#!/bin/bash
+
+#########################################################
+# BASE ENVIRONMENT VARIABLES (always enabled)
+#########################################################
+
+export PULSE_LATENCY_MSEC=60
+#export PROTON_ENABLE_WAYLAND=1
+export PROTON_USE_NTSYNC=1
+export PROTON_DLSS_UPGRADE=1
+
+#########################################################
+# FLAGS
+#########################################################
+
+USE_HDR=0
+USE_FG=0
+USE_M=0
+
+for arg in "$@"; do
+    case "$arg" in
+        -hdr) USE_HDR=1 ;;
+        -fg)  USE_FG=1 ;;
+        -m) USE_M=1 ;;
+        -all)
+            USE_HDR=1
+            USE_FG=1
+            USE_M=1
+            ;;
+    esac
+done
+
+
+#########################################################
+# APPLY HDR VARIABLES (Proton HDR mode)
+#########################################################
+if [[ "$USE_HDR" == "1" ]]; then
+    export PROTON_ENABLE_WAYLAND=1
+    export PROTON_ENABLE_HDR=1
+    export ENABLE_HDR_WSI=1
+    export DXVK_HDR=1
+fi
+
+
+#########################################################
+# FRAME GENERATION / FRAMELIMIT
+#########################################################
+if [[ "$USE_FG" == "1" ]]; then
+    export DXVK_FRAME_RATE=120
+    export ENABLE_LSFG=1
+    export LSFG_PROCESS="FRAMEGEN"
+    export LSFG_PERF_MODE=1
+fi
+
+
+#########################################################
+# FRAME GENERATION / FRAMELIMIT
+#########################################################
+if [[ "$USE_M" == "1" ]]; then
+    export MANGOHUD=1
+fi
+
+
+#########################################################
+# CLEAN ARGUMENTS (remove custom flags)
+#########################################################
+CLEAN_ARGS=()
+for arg in "$@"; do
+    case "$arg" in
+        -hdr|-fg|-m|-all)
+            ;; # remove custom flags
+        *)
+            CLEAN_ARGS+=("$arg")
+            ;;
+    esac
+done
+
+
+#########################################################
+# BASE LAUNCH COMMAND (simple + clean)
+#########################################################
+BASE_CMD=("gamemoderun")
+
+
+#########################################################
+# LAUNCH GAME
+#########################################################
+exec "${BASE_CMD[@]}" "${CLEAN_ARGS[@]}"
+
