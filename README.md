@@ -3,7 +3,7 @@
 > Dotfiles WIP - Create an Issue if Broken!
 
 > [!CAUTION]  
-> **INSTALL.SH** IS **EXTREMELY EXPERIMENTAL** - USE AT YOUR OWN RISK!
+> **[INSTALL.SH](https://github.com/cipher-iso/dotfiles/blob/main/install.sh)** IS **EXTREMELY EXPERIMENTAL** - USE AT YOUR OWN RISK!
 <br/>
 
 # 📦 NECESSARY PACKAGES
