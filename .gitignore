@@ -2,7 +2,5 @@ Scripts/MC-Server
 Scripts/MCA-Selector
 Scripts/ConvertMP4Davinci
 Scripts/Mount-All-Drives
-Scripts/Dotfiles.conf
-Scripts/DotfilesPkg.conf
 Scripts/DotfilesUpdater
 Scripts/CapsKeyFix
