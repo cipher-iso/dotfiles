@@ -16,7 +16,7 @@
 `sudo pacman -S --needed hyprland hypridle waybar kitty swayosd swaync hyprlock hyprsunset pavucontrol-qt blueman mpv easyeffects dolphin btop vivaldi wl-clip-persist hyprcursor mate-polkit nwg-look kvantum qt5ct gtk3 gtk4 neovim pipewire wireplumber xdg-desktop-portal cava cpio cmake pkg-config git gcc discord hyprshot hyprpicker steam mousepad timeshift`
  <br/> <br/>
  **AUR Packages:** <br/>
-`yay -S --needed nmgui-bin waypaper qimgv-git kew xwaylandvideobridge-git qt6ct-kde vicinae`<br/> <br/>
+`yay -S --needed nmgui-bin waypaper qimgv-git kew xwaylandvideobridge qt6ct-kde vicinae`<br/> <br/>
 <details>
 <summary>📋 Full Package List</summary>  
 <br/>
@@ -67,7 +67,7 @@
 > waypaper <br/>
 > qimgv-git <br/>
 > kew <br/>
-> xwaylandvideobridge-git <br/>
+> xwaylandvideobridge <br/>
 > qt6ct-kde <br/>
 > vicinae <br/>
 </details>
