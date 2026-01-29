@@ -32,7 +32,7 @@ mkdir -p "$CIPHER_DIR"
 if [[ -d $CIPHER_REPO/.git ]]; then
   git -C "$CIPHER_REPO" pull || fail "DOTFILES GIT PULL FAILED"
 else
-  git clone https://github.com/cipher-iso/dotfiles "$CIPHER_REPO" || fail "DOTFILES GIT CLONE FAILED"
+  git clone https://github.com/cipher-iso/Cipher-OS "$CIPHER_REPO" || fail "DOTFILES GIT CLONE FAILED"
 fi
 
 # ===================== REPO PATHS =====================
