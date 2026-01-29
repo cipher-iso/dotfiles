@@ -104,15 +104,13 @@ prompt "INSTALL ALL DOTFILES?" && {
   done
 
   # ===================== COPY ENVIRONMENT =====================
-  mkdir -p "$(dirname "$ENV_FILE")"
+mkdir -p "$(dirname "$ENV_FILE")"
+cp -a "$SOURCE_ENV" "$ENV_FILE"
 
-  if [[ $NVIDIA_INSTALL -eq 1 ]]; then
-    # YES → copy full Environment.conf
-    cp -a "$SOURCE_ENV" "$ENV_FILE"
-  else
-    # NO → copy WITHOUT NVIDIA section
-    sed '/^# NVIDIA SETTINGS/,/^$/d' "$SOURCE_ENV" > "$ENV_FILE"
-  fi
+if [[ $NVIDIA_INSTALL -eq 0 ]]; then
+  # Remove NVIDIA blocks (all lines starting with "# NVIDIA SETTINGS" and following env= lines)
+  sed -i '/^# NVIDIA SETTINGS/,/^[^#]/ { /^# NVIDIA SETTINGS/!{/^env = /d} }' "$ENV_FILE"
+fi
 
   ((DIR_OK++))
 }
