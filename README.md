@@ -7,7 +7,7 @@
   
 # <p align="center">⚡️ 2-STEP INSTALL! - [ RECOMMENDED ] ⚡️<br>
 > [!CAUTION]  
-> **[INSTALL.SH](https://github.com/cipher-iso/dotfiles/blob/main/install.sh)** IS **EXPERIMENTAL** - **[ USE AT YOUR OWN RISK! ]**<br>There is also a [Manual Installation](https://github.com/cipher-iso/dotfiles/tree/main#%EF%B8%8F-manual-installation) below.<br><br>
+> **[INSTALL.SH](https://github.com/cipher-iso/dotfiles/blob/main/install.sh)** IS **EXPERIMENTAL** - **[ USE AT YOUR OWN RISK! ]**<br>There is also a [Manual Installation](https://github.com/cipher-iso/dotfiles/tree/main#%EF%B8%8F-manual-installation-%EF%B8%8F) below.<br><br>
 >
 > ### **STEP 1:**
 > Download the [Install Script](https://github.com/cipher-iso/dotfiles/blob/main/install.sh) into your `$HOME` Directory<br><br>
