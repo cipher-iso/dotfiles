@@ -43,7 +43,7 @@
 ### **👥 | STEP 1: [ CLONE THIS REPO ]**
 In Your Terminal:<br>`git clone https://github.com/cipher-iso/dotfiles.git`<br><br>
 ### **📥 | STEP 2: [ INSTALL PACKAGES ]**
-Install the [Necessary Packages](https://github.com/cipher-iso/dotfiles?tab=readme-ov-file#-necessary-packages) Listed in [DotPKG.conf](https://github.com/cipher-iso/dotfiles/blob/main/DotPKG.conf)<br><br>
+Install the [Necessary Packages](https://github.com/cipher-iso/dotfiles?tab=readme-ov-file#-necessary-packages-) Listed in [DotPKG.conf](https://github.com/cipher-iso/dotfiles/blob/main/DotPKG.conf)<br><br>
 ### **🔌 | STEP 3: [ INSTALL PLUGINS ]**
 In Your Terminal:<br>`hyprpm update`<br>`hyprpm add hyprpm add https://github.com/hyprwm/hyprland-plugins`<br>`hyprpm enable hyprexpo` <br><br>
 ### **🗃️ | STEP 4: [ IMPORT DOTFILES ]**
