@@ -108,7 +108,7 @@ prompt "INSTALL ALL DOTFILES?" && {
   cp -a "$SOURCE_ENV" "$ENV_FILE"
 
   [[ $NVIDIA_INSTALL -eq 0 ]] &&
-    sed -i '/^# NVIDIA SETTINGS/,/^$/d' "$ENV_FILE"
+    sed -i '/^# >>> NVIDIA SETTINGS >>>/,/^# <<< NVIDIA SETTINGS <<</d' "$ENV_FILE"
 }
 
 # ===================== END ASCII =====================
