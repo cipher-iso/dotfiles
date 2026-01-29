@@ -67,24 +67,39 @@ echo
 
 # ===================== INSTALL PACKAGES =====================
 prompt "INSTALL REPOSITORIES?" && {
+  echo
+  ok "STARTING PACMAN INSTALLS"
+
   for p in "${PACMAN_PKGS[@]}"; do
+    echo
+    ok "PACMAN → $p"
+
     if pacman -Qi "$p" &>/dev/null; then
+      ok "$p ALREADY INSTALLED"
       ((PAC_OK++))
-    elif sudo pacman -S --needed --noconfirm "$p"; then
+    elif sudo pacman -S --needed "$p"; then
       ((PAC_OK++))
     else
       PAC_FAIL+=("$p")
+      fail "$p FAILED"
     fi
   done
-
   if command -v yay &>/dev/null; then
+    echo
+    ok "STARTING AUR INSTALLS"
+
     for p in "${AUR_PKGS[@]}"; do
+      echo
+      ok "AUR → $p"
+
       if yay -Qi "$p" &>/dev/null; then
+        ok "$p ALREADY INSTALLED"
         ((AUR_OK++))
-      elif yay -S --needed --noconfirm "$p"; then
+      elif yay -S --needed "$p"; then
         ((AUR_OK++))
       else
         AUR_FAIL+=("$p")
+        fail "$p FAILED"
       fi
     done
   else
@@ -100,8 +115,11 @@ printf "%s\n" "┏┳━  ┳┓╻┓╻┓┳┓┳┏┓  ┓┳┓┏┓┏�
 echo
 
 prompt "INSTALL NVIDIA PACKAGES?" && NVIDIA_INSTALL=1 || NVIDIA_INSTALL=0
-[[ $NVIDIA_INSTALL -eq 1 ]] &&
+if [[ $NVIDIA_INSTALL -eq 1 ]]; then
+  echo
+  ok "INSTALLING NVIDIA PACKAGES"
   sudo pacman -S --needed nvidia-utils lib32-nvidia-utils egl-wayland
+fi
 
 # ===================== HYPRPM / HYPREXPO =====================
 if command -v hyprpm &>/dev/null; then
@@ -114,8 +132,6 @@ fi
 
 # ===================== INSTALL DOTFILES =====================
 prompt "INSTALL ALL DOTFILES?" && {
-
-  chsh -s /bin/bash "$USER"
 
   printf "%s\n" "┏┳━  ┳┳┳┓┏┓┏┓┳┓┏┳┓  ┳┓┏┓┏┳┓┏┓┳┓ ┏┓┏┓  ━┳┓
 ┃┃   ┃┃┃┃┃┃┃┃┣┫ ┃   ┃┃┃┃ ┃ ┣ ┃┃ ┣ ┗┓   ┃┃
