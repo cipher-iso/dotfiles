@@ -10,23 +10,24 @@
 
 # 📦 NECESSARY PACKAGES
 
-> [!NOTE]  
-> **[These Packages](https://github.com/cipher-iso/dotfiles/blob/main/DotPKG.conf)** are **Required** for Dotfiles to Function. <br>
-> 
+> [!IMPORTANT]  
+> ### **[These Packages](https://github.com/cipher-iso/dotfiles/blob/main/DotPKG.conf)** are **Required** for Dotfiles to Function.<br>
+> Ignoring this may result in a broken config or non-functional features.
+> <br><br>
 > <details>
 > <summary>📋 <ins>Package List:<ins></summary>  
 > 
-> # 📘 PACMAN PACKAGES:<br>
+> ### 📘 PACMAN PACKAGES:<br>
 > `sudo pacman -S --needed hyprland hypridle waybar kitty swayosd swaync hyprlock hyprsunset pavucontrol-qt blueman mpv easyeffects dolphin btop vivaldi wl-clip-persist hyprcursor mate-polkit nwg-look kvantum qt5ct gtk3 gtk4 neovim pipewire wireplumber xdg-desktop-portal cava cpio cmake pkg-config git gcc discord hyprshot hyprpicker steam mousepad calf lsp-plugins-lv2 zam-plugins-lv2 mda.lv2 yelp ttf-jetbrains-mono ttf-jetbrains-mono-nerd cairo hyprgraphics hyprlang hyprutils hyprwayland-scanner mesa pam pango sdbus-cpp xorg-xwayland wayland-protocols archlinux-xdg-menu`<br>
-> # 📙 AUR PACKAGES:<br>
+> ### 📙 AUR PACKAGES:<br>
 > `yay -S --needed nmgui-bin waypaper qimgv-git kew xwaylandvideobridge qt6ct-kde vicinae swww`
 > </details>
 <br>
 
 # ✨ WAYBAR AUTO-HIDE
 > [!TIP]
-> Looking for Waybar-Autohide only? [Click Here!](https://github.com/cipher-iso/Waybar-Autohide)<br>
-> This is a stand-alone script for Waybar [Hyprland] to automatically hide Waybar
+> ### Looking for Waybar-Autohide only? [Click Here!](https://github.com/cipher-iso/Waybar-Autohide)<br>
+> This is a stand-alone auto-hide script for Waybar!<br>*[Made for Hyprland]*
 > 
 > ![Preview](https://raw.githubusercontent.com/cipher-xui/Waybar-Autohide/main/Preview.gif)
 <br>
