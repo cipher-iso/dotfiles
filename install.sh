@@ -4,7 +4,7 @@
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PKG_CONF="$DOTFILES_DIR/DotfilesPKG.conf"
 CONFIG_FILE="$DOTFILES_DIR/Scripts/Dotfiles.conf"
-SOURCE_ENV="$DOTFILES_DIR/Scripts/Environment.conf"
+SOURCE_ENV="$DOTFILES_DIR/.config/hypr/Config/Environment.conf"
 ENV_FILE="$HOME/.config/hypr/Config/Environment.conf"
 
 # ===================== FUNCTIONS =====================
