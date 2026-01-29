@@ -17,12 +17,12 @@ print_gradient() {
   done
 }
 
-ok()   { echo -e "\033[1m\033[38;2;0;255;64m[  \033[38;2;255;255;255m> \033[0m$1 ]"; }
-fail() { echo -e "\033[1m\033[38;2;255;64;64m[  \033[38;2;255;255;255m> \033[0m$1 ]"; }
+ok()   { echo -e "\033[1m\033[38;2;0;255;64m[  \033[38;2;255;255;255m> \033[38;2;0;255;64m$1 ]\033[0m"; }
+fail() { echo -e "\033[1m\033[38;2;0;255;64m[  \033[38;2;255;255;255m> \033[38;2;0;255;64m$1 ]\033[0m"; }
 
 prompt() {
-  local Y="\033[38;2;255;255;255mY\033[0m"
-  local N="\033[38;2;255;0;0mn\033[0m"
+  local Y="\033[38;2;255;255;255mY\033[38;2;0;255;64m"
+  local N="\033[38;2;255;0;0mn\033[38;2;0;255;64m"
   read -rp "$(echo -e "\033[1m[ $1 - [$Y/$N] ]\033[0m ")" r
   [[ -z $r || $r =~ ^[Yy]$ ]]
 }
@@ -111,7 +111,6 @@ prompt "INSTALL ALL DOTFILES?" && {
     fi
   done
 
-  # Copy Environment.conf and remove NVIDIA section if declined
   mkdir -p "$(dirname "$ENV_FILE")"
   cp -a "$SOURCE_ENV" "$ENV_FILE"
 
@@ -138,5 +137,5 @@ ok "$DIR_OK DOTFILES INSTALLED"
 for d in "${DIR_FAIL[@]}"; do fail "DOTFILE: $d FAILED"; done
 
 # ===================== REBOOT =====================
-read -rp "$(echo -e "\033[1m\033[38;2;234;255;0m[ INSTALLATION COMPLETE - REBOOT SYSTEM? - [\033[38;2;255;255;255mY\033[0m/\033[38;2;255;0;0mn\033[0m] ]\033[0m ")" r
+read -rp "$(echo -e "\033[1m\033[38;2;234;255;0m[ INSTALLATION COMPLETE - [\033[38;2;255;255;255mY\033[38;2;0;255;64m/\033[38;2;255;0;0mn\033[38;2;0;255;64m] ]\033[0m ")" r
 [[ -z $r || $r =~ ^[Yy]$ ]] && sudo reboot
