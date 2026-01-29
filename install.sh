@@ -4,7 +4,7 @@
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PKG_CONF="$DOTFILES_DIR/DotfilesPKG.conf"
 CONFIG_FILE="$DOTFILES_DIR/Scripts/Dotfiles.conf"
-SOURCE_ENV="$DOTFILES_DIR/.config/hypr/Config/Environment.conf"
+SOURCE_ENV="$DOTFILES_DIR/Scripts/Environment.conf"
 ENV_FILE="$HOME/.config/hypr/Config/Environment.conf"
 
 # ===================== FUNCTIONS =====================
@@ -84,6 +84,7 @@ printf "%s\n" "┏┳━  ┳┓╻┓╻┓┳┓┳┏┓  ┓┳┓┏┓┏�
 ┗┻━  ┛┗┛┗┛┻┻┛┻┛┗  ┻┛┗┗┛ ┻ ┛┗┗┛┗┛  ━┻┛" | print_gradient 3
 
 prompt "INSTALL NVIDIA PACKAGES?" && NVIDIA_INSTALL=1 || NVIDIA_INSTALL=0
+
 [[ $NVIDIA_INSTALL -eq 1 ]] &&
   sudo pacman -S --needed nvidia-utils lib32-nvidia-utils egl-wayland
 
@@ -103,16 +104,11 @@ prompt "INSTALL ALL DOTFILES?" && {
     fi
   done
 
-  # ===================== COPY ENVIRONMENT =====================
-mkdir -p "$(dirname "$ENV_FILE")"
-cp -a "$SOURCE_ENV" "$ENV_FILE"
+  mkdir -p "$(dirname "$ENV_FILE")"
+  cp -a "$SOURCE_ENV" "$ENV_FILE"
 
-if [[ $NVIDIA_INSTALL -eq 0 ]]; then
-  # Remove NVIDIA blocks (all lines starting with "# NVIDIA SETTINGS" and following env= lines)
-  sed -i '/^# NVIDIA SETTINGS/,/^[^#]/ { /^# NVIDIA SETTINGS/!{/^env = /d} }' "$ENV_FILE"
-fi
-
-  ((DIR_OK++))
+  [[ $NVIDIA_INSTALL -eq 0 ]] &&
+    sed -i '/^# NVIDIA SETTINGS/,/^$/d' "$ENV_FILE"
 }
 
 # ===================== END ASCII =====================
