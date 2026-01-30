@@ -5,7 +5,7 @@
   <a href="https://github.com/cipher-iso/dotfiles?tab=readme-ov-file#%EF%B8%8F-manual-installation-%EF%B8%8F">INSTALLATION</a> • <a href="https://github.com/cipher-iso/dotfiles/tree/main/Scripts">SCRIPTS</a> • <a href="https://github.com/cipher-iso/Waybar-Autohide">WAYBAR AUTO-HIDE</a> • <a href="https://github.com/cipher-iso/dotfiles/blob/main/DotPKG.conf">PACKAGE LIST</a>
 </p>
   
-## <p align="center">⚡️ 2-STEP INSTALL! - [ RECOMMENDED ] ⚡️<br>
+## <p align="center">⚡️ 2-STEP INSTALL! ⚡<br>[ RECOMMENDED ]<br>
 > [!CAUTION]  
 > **[INSTALL.SH](https://github.com/cipher-iso/dotfiles/blob/main/install.sh)** IS **EXPERIMENTAL** - **[ USE AT YOUR OWN RISK! ]**<br>There is also a [Manual Installation](https://github.com/cipher-iso/dotfiles/tree/main#%EF%B8%8F-manual-installation-%EF%B8%8F) below.<br><br>
 >
@@ -15,11 +15,11 @@
 > In Your Terminal:<br>`chmod +x ~/install.sh && ~/install.sh`<br>
 <br/>
 
-## <p align="center">📦 NECESSARY PACKAGES 📦
+## <p align="center">📦 REQUIRED PACKAGES 📦
 
 > [!IMPORTANT]  
-> ### **[These Packages](https://github.com/cipher-iso/dotfiles/blob/main/DotPKG.conf)** are **Required** for Dotfiles to Function.<br>
-> Ignoring this may result in a broken config or non-functional features.
+> ### **[These Packages](https://github.com/cipher-iso/dotfiles/blob/main/DotPKG.conf)** are **Necessary** for Themeing & Functionality.<br>
+> Ignoring these will result in a broken config or a dysfunctional system.
 > <br><br>
 > <details>
 > <summary>📋 <ins>Package List:<ins></summary>  
@@ -42,11 +42,11 @@
 ## <p align="center">🛠️ MANUAL INSTALLATION 🛠️
 ### **👥 | STEP 1: [ CLONE THIS REPO ]**
 In Your Terminal:<br>`git clone https://github.com/cipher-iso/Cipher-OS.git`<br><br>
-### **📥 | STEP 2: [ INSTALL PACKAGES ]**
-Install the [Necessary Packages](https://github.com/cipher-iso/dotfiles?tab=readme-ov-file#-necessary-packages-) Listed in [DotPKG.conf](https://github.com/cipher-iso/dotfiles/blob/main/DotPKG.conf)<br><br>
+### **📥 | STEP 2: [ DEPENDENCIES ]**
+Install the [Required Packages](https://github.com/cipher-iso/dotfiles?tab=readme-ov-file#-required-packages-) Listed in [DotPKG.conf](https://github.com/cipher-iso/dotfiles/blob/main/DotPKG.conf)<br><br>
 ### **🔌 | STEP 3: [ INSTALL PLUGINS ]**
 In Your Terminal:<br>`hyprpm update`<br>`hyprpm add hyprpm add https://github.com/hyprwm/hyprland-plugins`<br>`hyprpm enable hyprexpo` <br><br>
 ### **🗃️ | STEP 4: [ IMPORT DOTFILES ]**
 In Your Terminal:<br>`rsync -r --remove-source-files --exclude='{.gitignore,README.md,install.sh,DotPKG.conf,DotDIR.conf}' ~/Cipher-OS/ ~/`<br><br>This will import Dotfiles, whilst ignoring git files.<br>Otherwise, paste [each Directory](https://github.com/cipher-iso/dotfiles/blob/main/DotDIR.conf) in your `$HOME` - [ `SLO` & `.bashrc` Optional ] <br><br>
-### **✅ | STEP 5: [ COMPLETE INSTALLATION ]**
+### **✅ | STEP 5: [ COMPLETE ]**
 Reboot your System for all Functions & Themeing to take Effect.<br>
