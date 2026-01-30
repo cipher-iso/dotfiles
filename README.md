@@ -5,7 +5,7 @@
   <a href="https://github.com/cipher-iso/dotfiles?tab=readme-ov-file#%EF%B8%8F-manual-installation-%EF%B8%8F">INSTALLATION</a> • <a href="https://github.com/cipher-iso/dotfiles/tree/main/Scripts">SCRIPTS</a> • <a href="https://github.com/cipher-iso/Waybar-Autohide">WAYBAR AUTO-HIDE</a> • <a href="https://github.com/cipher-iso/dotfiles/blob/main/DotPKG.conf">PACKAGE LIST</a>
 </p>
   
-# <p align="center">⚡️ 2-STEP INSTALL! - [ RECOMMENDED ] ⚡️<br>
+## <p align="center">⚡️ 2-STEP INSTALL! - [ RECOMMENDED ] ⚡️<br>
 > [!CAUTION]  
 > **[INSTALL.SH](https://github.com/cipher-iso/dotfiles/blob/main/install.sh)** IS **EXPERIMENTAL** - **[ USE AT YOUR OWN RISK! ]**<br>There is also a [Manual Installation](https://github.com/cipher-iso/dotfiles/tree/main#%EF%B8%8F-manual-installation-%EF%B8%8F) below.<br><br>
 >
@@ -15,7 +15,7 @@
 > In Your Terminal:<br>`chmod +x ~/install.sh && ~/install.sh`<br>
 <br/>
 
-# <p align="center">📦 NECESSARY PACKAGES 📦
+## <p align="center">📦 NECESSARY PACKAGES 📦
 
 > [!IMPORTANT]  
 > ### **[These Packages](https://github.com/cipher-iso/dotfiles/blob/main/DotPKG.conf)** are **Required** for Dotfiles to Function.<br>
@@ -31,7 +31,7 @@
 > </details>
 <br>
 
-# <p align="center">✨ WAYBAR AUTO-HIDE ✨
+## <p align="center">✨ WAYBAR AUTO-HIDE ✨
 > [!TIP]
 > ### Looking for Waybar-Autohide only? [Click Here!](https://github.com/cipher-iso/Waybar-Autohide)<br>
 > This is a stand-alone auto-hide script for Waybar!<br>*[Made for Hyprland]*
@@ -39,7 +39,7 @@
 > ![Preview](https://raw.githubusercontent.com/cipher-xui/Waybar-Autohide/main/Preview.gif)
 <br>
 
-# <p align="center">🛠️ MANUAL INSTALLATION 🛠️
+## <p align="center">🛠️ MANUAL INSTALLATION 🛠️
 ### **👥 | STEP 1: [ CLONE THIS REPO ]**
 In Your Terminal:<br>`git clone https://github.com/cipher-iso/Cipher-OS.git`<br><br>
 ### **📥 | STEP 2: [ INSTALL PACKAGES ]**
