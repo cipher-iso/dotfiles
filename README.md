@@ -40,13 +40,13 @@
 <br>
 
 ## <p align="center">🛠️ MANUAL INSTALL 🛠️
-### **👥 | STEP 1: [ CLONE THIS REPO ]**
+### **👥 | STEP 1: [ CLONING REPO ]**
 In Your Terminal:<br>`git clone https://github.com/cipher-iso/Cipher-OS.git`<br><br>
 ### **📥 | STEP 2: [ DEPENDENCIES ]**
 Install the [Required Packages](https://github.com/cipher-iso/Cipher-OS?tab=readme-ov-file#-required-packages-) Listed in [DotPKG.conf](https://github.com/cipher-iso/Cipher-OS/blob/main/DotPKG.conf)<br><br>
-### **🔌 | STEP 3: [ INSTALL PLUGINS ]**
+### **🔌 | STEP 3: [ HYPR PLUGINS ]**
 In Your Terminal:<br>`hyprpm update`<br>`hyprpm add hyprpm add https://github.com/hyprwm/hyprland-plugins`<br>`hyprpm enable hyprexpo` <br><br>
-### **🗃️ | STEP 4: [ IMPORT DOTFILES ]**
+### **🗃️ | STEP 4: [ SYNC DOTFILES ]**
 In Your Terminal:<br>`rsync -r --remove-source-files --exclude='{.gitignore,README.md,install.sh,DotPKG.conf,DotDIR.conf}' ~/Cipher-OS/ ~/`<br><br>This will import Dotfiles, whilst ignoring git files.<br>Otherwise, paste [each Directory](https://github.com/cipher-iso/Cipher-OS/blob/main/DotDIR.conf) in your `$HOME` - [ `SLO` & `.bashrc` Optional ] <br><br>
 ### **✅ | STEP 5: [ COMPLETE ]**
 Reboot your System for all Functions & Themeing to take Effect.<br>
