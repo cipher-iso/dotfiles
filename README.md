@@ -5,6 +5,8 @@
   <a href="https://github.com/cipher-iso/Cipher-OS/tree/main?tab=readme-ov-file#%EF%B8%8F-manual-install-%EF%B8%8F">INSTALL</a> • <a href="https://github.com/cipher-iso/Cipher-OS/tree/main/Scripts">SCRIPTS</a> • <a href="https://github.com/cipher-iso/Waybar-Autohide">WAYBAR</a> • <a href="https://github.com/cipher-iso/Cipher-OS/blob/main/DotPKG.conf">DEPENDS</a>
 </p>
   
+---
+
 ## <p align="center">⚡️ 2-STEP INSTALL! ⚡<br>[ RECOMMENDED ]<br>
 > [!CAUTION]  
 > **[INSTALL.SH](https://github.com/cipher-iso/Cipher-OS/blob/main/install.sh)** IS **EXPERIMENTAL** - **[ USE AT YOUR OWN RISK! ]**<br>There is also a [Manual Installation](https://github.com/cipher-iso/Cipher-OS/tree/main?tab=readme-ov-file#%EF%B8%8F-manual-install-%EF%B8%8F) below.<br><br>
@@ -14,6 +16,8 @@
 > ### **STEP 2:**
 > In Your Terminal:<br>`chmod +x ~/install.sh && ~/install.sh`<br>
 <br/>
+
+---
 
 ## <p align="center">📦 DEPENDENCIES 📦
 
@@ -31,6 +35,8 @@
 > </details>
 <br>
 
+---
+
 ## <p align="center">✨ WAYBAR AUTO-HIDE ✨
 > [!TIP]
 > ### Looking for Waybar-AutoHide only? [Click Here!](https://github.com/cipher-iso/Waybar-Autohide)<br>
@@ -38,6 +44,8 @@
 > 
 > ![Preview](https://raw.githubusercontent.com/cipher-xui/Waybar-Autohide/main/Preview.gif)
 <br>
+
+---
 
 ## <p align="center">🛠️ MANUAL INSTALL 🛠️
 ### **👥 | STEP 1: [ CLONING REPO ]**
