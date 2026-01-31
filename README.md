@@ -15,7 +15,9 @@
 > Download the [Install Script](https://github.com/cipher-iso/Cipher-OS/blob/main/install.sh) into your `$HOME` Directory<br><br>
 > ### **STEP 2:**
 > In Your Terminal:<br>
-```chmod +x ~/install.sh && ~/install.sh```
+
+    chmod +x ~/install.sh && ~/install.sh
+
 <br>
 <br/>
 
