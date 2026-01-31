@@ -50,3 +50,15 @@ In Your Terminal:<br>`hyprpm update`<br>`hyprpm add hyprpm add https://github.co
 In Your Terminal:<br>`rsync -r --remove-source-files --exclude='{.gitignore,README.md,install.sh,DotPKG.conf,DotDIR.conf}' ~/Cipher-OS/ ~/`<br><br>This will import Dotfiles, whilst ignoring git files.<br>Otherwise, paste [each Directory](https://github.com/cipher-iso/Cipher-OS/blob/main/DotDIR.conf) in your `$HOME` - [ `SLO` & `.bashrc` Optional ] <br><br>
 ### **✅ | STEP 5: [ COMPLETE ]**
 Reboot your System for all Functions & Themeing to take Effect.<br>
+
+---
+
+## <p align="center">✨ STAR HISTORY ✨</p>
+
+<a href="https://www.star-history.com/#cipher-iso/Cipher-OS&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=cipher-iso/Cipher-OS&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=cipher-iso/Cipher-OS&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=cipher-iso/Cipher-OS&type=date&legend=top-left" />
+ </picture>
+</a>
